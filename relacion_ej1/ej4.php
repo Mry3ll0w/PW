@@ -15,9 +15,9 @@
 
             if($cont == 10){
                 $cont = 0;
-                echo '<tr></tr>';
+                echo '<tr></tr>';//TR mete filas
             }
-            echo '<td>'.$i.'</td>';//TD genera
+            echo '<td>'.$i.'</td>';//TD mete columnas 
             
             $cont++;
         } 
