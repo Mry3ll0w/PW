@@ -3,8 +3,6 @@
 <style>
     
     th{
-        width: 75%;
-        height: 75%;
         border: 1px solid;
         background-color: #0066cc
     };

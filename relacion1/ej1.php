@@ -5,7 +5,7 @@
 
     $final = $cad1.$cad2;
 
-    echo "El resulatado es $final <br>";
+    echo "El resultado es $final <br>";
 
 ?>
 
