@@ -21,26 +21,35 @@
             <th>Porcentaje</th>
             <th>Representación gráfica</th>
         </tr>
-        <tr><td>Si</td></tr>
-        <tr><td>No</td></tr>
+        <td>Si</td>
+        
         <?php
             //Conectamos a la base de datos
             $server = mysqli_connect("127.0.0.1","cursophp","","lindavista");
             $consulta = mysqli_query($server, "SELECT * from votos");
             $numfilas = mysqli_num_rows($consulta);
+            $f = mysqli_fetch_array($consulta);
             
-            for($i = 0 ; $i < $numfilas;++$i){
+            //Fila del si
+            $v1 = $f['votos1'];
+            $v2 = $f['votos2'];
+            $total = $v2 + $v1;
 
-                $f = mysqli_fetch_array($consulta);
-                echo "<td>".$f['votos1']."</td>";
-                echo "<tr></tr>";
-                echo "<td>".$f['votos2']."</td>";
-                echo "<tr></tr>";
+            echo "<td>".$v1."</td>";
+            echo "<td>".round($v1/$total,3)."%</td>";
 
-            }
+            //fila reprenstacion grafica
+            echo "<tr></tr>";
+            
+            //Fila del no
+            echo "<td>No</td>";
+            echo "<td>".$v2."</td>";
+            echo "<td>".round($v2/$total,3)."%</td>";
 
+            //Fila reprensatacion grafica
 
         ?>
+    
     </table>
 
 </body>

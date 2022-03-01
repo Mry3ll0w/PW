@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=4.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <h1 style="color:#0066cc">Insercion de nueva noticia</h1>
+    <form action="noticia.php" method="post">
+        
+       <table>
+           <td>Titulo * </td> <td><input type="text" name="titulo" required></td>
+           <tr></tr>
+           <td>Texto *</td> <td><textarea name="texto" cols="30" rows="10" required></textarea></td>
+           <tr></tr>
+           <td>Categoria</td> 
+                <td> 
+                    <select name="categoria">
+                        <option value="promociones" selected="yes">promociones</option>
+                        <option value="oferta">oferta</option>
+                        <option value="costa">costa</option>
+                    </select> 
+                </td>
+            <tr></tr> 
+
+            <td>Imagen: </td> <td><input type="file" name="imagen" id="imagen"></td>  
+       
+        </table>
+        <br><br>
+        <input type="submit" value="Insertar Noticia" name="submit">
+    </form>
+</body>
+</html>
