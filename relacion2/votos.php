@@ -32,7 +32,11 @@
             for($i = 0 ; $i < $numfilas;++$i){
 
                 $f = mysqli_fetch_array($consulta);
-                echo "";
+                echo "<td>".$f['votos1']."</td>";
+                echo "<tr></tr>";
+                echo "<td>".$f['votos2']."</td>";
+                echo "<tr></tr>";
+
             }
 
 
