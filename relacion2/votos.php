@@ -47,6 +47,7 @@
             echo "<td>".round($v2/$total,3)."%</td>";
 
             //Fila reprensatacion grafica
+            
 
         ?>
     
