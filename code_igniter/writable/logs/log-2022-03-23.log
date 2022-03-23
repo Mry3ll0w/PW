@@ -1,0 +1,36 @@
+CRITICAL - 2022-03-23 18:16:18 --> Class "App\Models\Ejemplo_Model" not found
+#0 /home/ara/code_igniter/system/CodeIgniter.php(832): App\Controllers\Ejemplo->impresion()
+#1 /home/ara/code_igniter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejemplo))
+#2 /home/ara/code_igniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/ara/code_igniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-23 18:16:50 --> Class "App\Controllers\Ejemplo_Model" not found
+#0 /home/ara/code_igniter/system/CodeIgniter.php(832): App\Controllers\Ejemplo->impresion()
+#1 /home/ara/code_igniter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ejemplo))
+#2 /home/ara/code_igniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home/ara/code_igniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-03-23 18:21:05 --> No database selected
+CRITICAL - 2022-03-23 18:21:05 --> No database selected
+#0 /home/ara/code_igniter/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/ara/code_igniter/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/ara/code_igniter/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/ara/code_igniter/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/ara/code_igniter/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/ara/code_igniter/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 /home/ara/code_igniter/app/Models/ArticuloModel.php(17): CodeIgniter\BaseModel->findAll()
+#7 /home/ara/code_igniter/app/Controllers/Articulo.php(15): App\Models\ArticuloModel->getArticulos()
+#8 /home/ara/code_igniter/system/CodeIgniter.php(832): App\Controllers\Articulo->index()
+#9 /home/ara/code_igniter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulo))
+#10 /home/ara/code_igniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/ara/code_igniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-03-23 18:22:25 --> Invalid file: articulo/overview.php
+#0 /home/ara/code_igniter/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('articulo/overvi...')
+#1 /home/ara/code_igniter/system/Common.php(1089): CodeIgniter\View\View->render('articulo/overvi...', Array, true)
+#2 /home/ara/code_igniter/app/Controllers/Articulo.php(19): view('articulo/overvi...', Array)
+#3 /home/ara/code_igniter/system/CodeIgniter.php(832): App\Controllers\Articulo->index()
+#4 /home/ara/code_igniter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulo))
+#5 /home/ara/code_igniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/ara/code_igniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
