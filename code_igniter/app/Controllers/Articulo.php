@@ -16,7 +16,7 @@ class Articulo extends Controller{
             'title'=>'Bienvenido a la web de articulos'
         ];
         echo view('templates/header',$data);
-        //echo view('articulo/overview',$data);
+        echo view('articulo/overview',$data);
         echo view('templates/footer',$data);
     }
 
