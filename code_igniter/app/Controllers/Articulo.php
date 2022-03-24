@@ -38,6 +38,39 @@ class Articulo extends Controller{
 
     }
 
+    //Funcion de crear del formulario
+    public function create()
+    {
+        $model = new ArticuloModel();
+
+        if(
+            $this->request->getMethod()=='post'
+            &&
+            $this->validate(
+                [
+                    'title' =>'required|min_length[3]|max_length[255]',
+                    'descripcion' => 'required',
+                    'cuerpo' => 'required'
+                ]
+            )
+        ){
+
+            $model->save([
+                'title'=> $this->request->getPost('title'),
+                'descripcion'=> $this->request->getPost('descripcion'),
+                'cuerpo' => $this->request->getPost('cuerpo')
+            ]);
+            
+            echo view('articulo/articuloguardado');
+        }
+        else
+        {
+            echo view('templates/header',['title' => 'Cretate an articulo item' ]);
+            echo view('articulo/creararticulo');
+            echo view('templates/footer');
+        }
+
+    }
     
 }
 

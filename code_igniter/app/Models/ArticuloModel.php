@@ -12,9 +12,13 @@
         protected $allowedFields=['title','descripcion','cuerpo'];
 
         
-        public function getArticulos()
+        public function getArticulos($id = false)
         {
-            return $this->findAll();
+            if($id == false){
+                return $this->findAll(); 
+            }
+            
+            return $this->asArray()->where(['id' => $id])->first();
         }
 
     }
