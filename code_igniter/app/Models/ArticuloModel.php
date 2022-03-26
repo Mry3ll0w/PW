@@ -14,7 +14,7 @@
         
         public function getArticulos($id = false)
         {
-            if($id == false){
+            if($id === false){
                 return $this->findAll(); 
             }
             

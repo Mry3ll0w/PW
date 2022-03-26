@@ -39,3 +39,6 @@ CRITICAL - 2022-03-26 05:57:43 --> Undefined variable $articulos_item
 #7 /home/ara/PW/code_igniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #8 /home/ara/PW/code_igniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #9 {main}
+CRITICAL - 2022-03-26 06:33:05 --> Can't use method return value in write context
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
