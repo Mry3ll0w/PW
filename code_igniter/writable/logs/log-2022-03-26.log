@@ -88,3 +88,35 @@ CRITICAL - 2022-03-26 14:26:55 --> Undefined constant "App\Controllers\Smodel"
 #2 /home/ara/PW/code_igniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #3 /home/ara/PW/code_igniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #4 {main}
+ERROR - 2022-03-26 15:54:06 --> Column 'title' cannot be null
+CRITICAL - 2022-03-26 15:54:06 --> Column 'title' cannot be null
+#0 /home/ara/PW/code_igniter/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `ar...', 0)
+#1 /home/ara/PW/code_igniter/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ar...')
+#2 /home/ara/PW/code_igniter/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ar...')
+#3 /home/ara/PW/code_igniter/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ar...', Array, false)
+#4 /home/ara/PW/code_igniter/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/ara/PW/code_igniter/system/BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 /home/ara/PW/code_igniter/system/Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 /home/ara/PW/code_igniter/system/BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 /home/ara/PW/code_igniter/app/Controllers/Articulo.php(55): CodeIgniter\BaseModel->save(Array)
+#9 /home/ara/PW/code_igniter/system/CodeIgniter.php(832): App\Controllers\Articulo->create()
+#10 /home/ara/PW/code_igniter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulo))
+#11 /home/ara/PW/code_igniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /home/ara/PW/code_igniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-03-26 15:54:56 --> Column 'title' cannot be null
+CRITICAL - 2022-03-26 15:54:56 --> Column 'title' cannot be null
+#0 /home/ara/PW/code_igniter/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `ar...', 0)
+#1 /home/ara/PW/code_igniter/system/Database/BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ar...')
+#2 /home/ara/PW/code_igniter/system/Database/BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ar...')
+#3 /home/ara/PW/code_igniter/system/Database/BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ar...', Array, false)
+#4 /home/ara/PW/code_igniter/system/Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/ara/PW/code_igniter/system/BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 /home/ara/PW/code_igniter/system/Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 /home/ara/PW/code_igniter/system/BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 /home/ara/PW/code_igniter/app/Controllers/Articulo.php(55): CodeIgniter\BaseModel->save(Array)
+#9 /home/ara/PW/code_igniter/system/CodeIgniter.php(832): App\Controllers\Articulo->create()
+#10 /home/ara/PW/code_igniter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulo))
+#11 /home/ara/PW/code_igniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /home/ara/PW/code_igniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}

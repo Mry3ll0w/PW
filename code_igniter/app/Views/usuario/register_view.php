@@ -16,6 +16,6 @@
       <label for="pass2"> Repetir Contraseña</label>
      <input type="input" name="pass2" /><br />
      <br></br>
-     <input type="submit" name="submit" value="Create usuario item" />
+     <input type="submit" name="submit" value="Crea tu usuario" />
     <p><a href="/">Inicio Sesión</a></p>
 </form>

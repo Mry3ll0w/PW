@@ -1,5 +1,5 @@
 <?= \Config\Services::validation()->listErrors(); ?>
-<form action="/articulo/create" method="post">
+<form action="/articulo/" method="post">
    <?= csrf_field() ?>
    <label for="user">Usuario</label>
    <input type="input" name="user" /><br/>
