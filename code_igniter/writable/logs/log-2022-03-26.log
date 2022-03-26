@@ -42,3 +42,13 @@ CRITICAL - 2022-03-26 05:57:43 --> Undefined variable $articulos_item
 CRITICAL - 2022-03-26 06:33:05 --> Can't use method return value in write context
 #0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
 #1 {main}
+CRITICAL - 2022-03-26 12:20:39 --> required min_length is not a valid rule.
+#0 /home/ara/PW/code_igniter/system/Validation/Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('required min_le...')
+#1 /home/ara/PW/code_igniter/system/Validation/Validation.php(157): CodeIgniter\Validation\Validation->processRules('title', 'title', 'Segundo articul...', Array, Array)
+#2 /home/ara/PW/code_igniter/system/Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 /home/ara/PW/code_igniter/app/Controllers/Articulo.php(47): CodeIgniter\Controller->validate(Array)
+#4 /home/ara/PW/code_igniter/system/CodeIgniter.php(832): App\Controllers\Articulo->create()
+#5 /home/ara/PW/code_igniter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulo))
+#6 /home/ara/PW/code_igniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /home/ara/PW/code_igniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

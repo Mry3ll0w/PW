@@ -2,7 +2,7 @@
 
 <?php \Config\Services::validation()->listErrors(); ?>
 
-<form action="/articulo/create">
+<form action="/articulo/create" method="post">
 
     <?php csrf_field() ?>
     <label for="title">Titulo</label>
