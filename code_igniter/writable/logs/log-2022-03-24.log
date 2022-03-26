@@ -1,0 +1,86 @@
+ERROR - 2022-03-24 04:25:00 --> Error connecting to the database: No such file or directory
+CRITICAL - 2022-03-24 04:25:00 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /home/ara/PW/code_igniter/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /home/ara/PW/code_igniter/system/Database/BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /home/ara/PW/code_igniter/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /home/ara/PW/code_igniter/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 /home/ara/PW/code_igniter/app/Models/ArticuloModel.php(17): CodeIgniter\BaseModel->findAll()
+#5 /home/ara/PW/code_igniter/app/Controllers/Articulo.php(15): App\Models\ArticuloModel->getArticulos()
+#6 /home/ara/PW/code_igniter/system/CodeIgniter.php(832): App\Controllers\Articulo->index()
+#7 /home/ara/PW/code_igniter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulo))
+#8 /home/ara/PW/code_igniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/ara/PW/code_igniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-03-24 05:16:33 --> Invalid file: articulo/overview.php
+#0 /home/ara/PW/code_igniter/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('articulo/overvi...')
+#1 /home/ara/PW/code_igniter/system/Common.php(1089): CodeIgniter\View\View->render('articulo/overvi...', Array, true)
+#2 /home/ara/PW/code_igniter/app/Controllers/Articulo.php(19): view('articulo/overvi...', Array)
+#3 /home/ara/PW/code_igniter/system/CodeIgniter.php(832): App\Controllers\Articulo->index()
+#4 /home/ara/PW/code_igniter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulo))
+#5 /home/ara/PW/code_igniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/ara/PW/code_igniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-24 05:19:38 --> Invalid file: articulo/overview.php
+#0 /home/ara/PW/code_igniter/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('articulo/overvi...')
+#1 /home/ara/PW/code_igniter/system/Common.php(1089): CodeIgniter\View\View->render('articulo/overvi...', Array, true)
+#2 /home/ara/PW/code_igniter/app/Controllers/Articulo.php(19): view('articulo/overvi...', Array)
+#3 /home/ara/PW/code_igniter/system/CodeIgniter.php(832): App\Controllers\Articulo->index()
+#4 /home/ara/PW/code_igniter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulo))
+#5 /home/ara/PW/code_igniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/ara/PW/code_igniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-24 05:25:38 --> Invalid file: articulo/overview.php
+#0 /home/ara/PW/code_igniter/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('articulo/overvi...')
+#1 /home/ara/PW/code_igniter/system/Common.php(1089): CodeIgniter\View\View->render('articulo/overvi...', Array, true)
+#2 /home/ara/PW/code_igniter/app/Controllers/Articulo.php(19): view('articulo/overvi...', Array)
+#3 /home/ara/PW/code_igniter/system/CodeIgniter.php(832): App\Controllers\Articulo->index()
+#4 /home/ara/PW/code_igniter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulo))
+#5 /home/ara/PW/code_igniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/ara/PW/code_igniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-24 05:25:41 --> Invalid file: articulo/overview.php
+#0 /home/ara/PW/code_igniter/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('articulo/overvi...')
+#1 /home/ara/PW/code_igniter/system/Common.php(1089): CodeIgniter\View\View->render('articulo/overvi...', Array, true)
+#2 /home/ara/PW/code_igniter/app/Controllers/Articulo.php(19): view('articulo/overvi...', Array)
+#3 /home/ara/PW/code_igniter/system/CodeIgniter.php(832): App\Controllers\Articulo->index()
+#4 /home/ara/PW/code_igniter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulo))
+#5 /home/ara/PW/code_igniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/ara/PW/code_igniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-24 05:33:40 --> Invalid file: articulo/overview.php
+#0 /home/ara/PW/code_igniter/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('articulo/overvi...')
+#1 /home/ara/PW/code_igniter/system/Common.php(1089): CodeIgniter\View\View->render('articulo/overvi...', Array, true)
+#2 /home/ara/PW/code_igniter/app/Controllers/Articulo.php(19): view('articulo/overvi...', Array)
+#3 /home/ara/PW/code_igniter/system/CodeIgniter.php(832): App\Controllers\Articulo->index()
+#4 /home/ara/PW/code_igniter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulo))
+#5 /home/ara/PW/code_igniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/ara/PW/code_igniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-24 06:27:32 --> Invalid file: articulo/overview.php
+#0 /home/ara/PW/code_igniter/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('articulo/overvi...')
+#1 /home/ara/PW/code_igniter/system/Common.php(1089): CodeIgniter\View\View->render('articulo/overvi...', Array, true)
+#2 /home/ara/PW/code_igniter/app/Controllers/Articulo.php(19): view('articulo/overvi...', Array)
+#3 /home/ara/PW/code_igniter/system/CodeIgniter.php(832): App\Controllers\Articulo->index()
+#4 /home/ara/PW/code_igniter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulo))
+#5 /home/ara/PW/code_igniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/ara/PW/code_igniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-24 07:05:29 --> Invalid file: articulo/overview.php
+#0 /home/ara/PW/code_igniter/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('articulo/overvi...')
+#1 /home/ara/PW/code_igniter/system/Common.php(1089): CodeIgniter\View\View->render('articulo/overvi...', Array, true)
+#2 /home/ara/PW/code_igniter/app/Controllers/Articulo.php(19): view('articulo/overvi...', Array)
+#3 /home/ara/PW/code_igniter/system/CodeIgniter.php(832): App\Controllers\Articulo->index()
+#4 /home/ara/PW/code_igniter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulo))
+#5 /home/ara/PW/code_igniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/ara/PW/code_igniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-24 07:05:33 --> Invalid file: articulo/creararticulo.php
+#0 /home/ara/PW/code_igniter/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('articulo/creara...')
+#1 /home/ara/PW/code_igniter/system/Common.php(1089): CodeIgniter\View\View->render('articulo/creara...', Array, true)
+#2 /home/ara/PW/code_igniter/app/Controllers/Articulo.php(69): view('articulo/creara...')
+#3 /home/ara/PW/code_igniter/system/CodeIgniter.php(832): App\Controllers\Articulo->create()
+#4 /home/ara/PW/code_igniter/system/CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Articulo))
+#5 /home/ara/PW/code_igniter/system/CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /home/ara/PW/code_igniter/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

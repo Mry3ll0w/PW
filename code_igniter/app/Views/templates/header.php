@@ -1,5 +1,9 @@
 <!doctype html>
+
 <html>
     <head>
-        <title>Tutorial CodeIgniter 4.19</title>
+        <title>CodeIgniter tutorial</title>
     </head>
+    <body>
+        <h1><?=esc($title); ?></h1>    
+    
