@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,9 +14,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/*  Ruta original
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+*/
+
+Route::get('/','HolaController@welcome')->name('welcome');
+Route::get('/hola/{nombre}','HolaController@saludo')->name('saludo');
+Route::get('/hola/{nombre}/{edad}','HolaController@saludo2')->name('saludo2');
+
 
 Route::middleware([
     'auth:sanctum',
