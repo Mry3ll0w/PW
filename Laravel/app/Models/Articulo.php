@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Articulo extends Model
 {
     use HasFactory;
+    protected $table='articulos';
+
+    //Tablas a rellenar
+    protected $fillable =['titulo','descripcion','cuerpo'];
+
+
 }

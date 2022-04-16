@@ -6,9 +6,8 @@
 <form action="{{route('guardar_articulo')}}" method="POST">
 <!-- Para que laravel permita hacer post, evita TokenMismatchException-->
 {{csrf_field()}}
-<!-- Para insertar un texto con un name =
-<label for="titulo">Título:</label> <br />
-                                          titulo -->
+<!-- Para insertar un texto con un name =titulo -->
+<label for="titulo">Título:</label> <br />                   
 <input type="text" name="titulo" class="input" value=""/> <br /><br />
 <!-- Para insertar un texto con un name = descripcion -->
 <label for="descripcion">Descripción:</label> <br />
