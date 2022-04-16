@@ -46,6 +46,6 @@
                 </x-jet-button>
             </div>
         </form>
-    
+        <a href="{{route('register')}}" class="btn btn-primary" >Registrate</a>
 
 @endsection
